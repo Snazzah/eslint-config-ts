@@ -68,6 +68,12 @@ module.exports = {
     {
       files: ['*.d.ts'],
       rules: { 'spaced-comment': 0 }
+    },
+    {
+      files: ['rollup.config.js'],
+      parserOptions: {
+        sourceType: 'module'
+      }
     }
   ]
 };
