@@ -39,6 +39,7 @@ module.exports = {
         sourceType: 'module'
       },
       rules: {
+        '@typescript-eslint/no-explicit-any': 0,
         '@typescript-eslint/triple-slash-reference': 0,
         'import/first': 'warn',
         'import/newline-after-import': 'warn',
