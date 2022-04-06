@@ -41,6 +41,8 @@ module.exports = {
       rules: {
         '@typescript-eslint/no-explicit-any': 0,
         '@typescript-eslint/triple-slash-reference': 0,
+        '@typescript-eslint/no-non-null-assertion': 0,
+        '@typescript-eslint/ban-ts-comment': 0,
         'import/first': 'warn',
         'import/newline-after-import': 'warn',
         'import/no-duplicates': 'warn',
