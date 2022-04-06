@@ -3,13 +3,6 @@ module.exports = {
     es2021: true,
     node: true
   },
-  extends: ['eslint:recommended', 'plugin:prettier/recommended'],
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    ecmaVersion: 2021,
-    project: './tsconfig.json',
-    sourceType: 'module',
-  },
   plugins: ['prettier', '@typescript-eslint', 'unused-imports', 'simple-import-sort', 'import'],
   rules: {
     'linebreak-style': ['warn', 'unix'],
@@ -22,19 +15,19 @@ module.exports = {
         singleQuote: true,
         tabWidth: 2,
         useTabs: false,
-        trailingComma: "none",
-      },
-    ],
+        trailingComma: 'none'
+      }
+    ]
   },
   overrides: [
     {
-        extends: ['plugin:json/recommended'],
-        files: ['*.json'],
-        plugins: ['json'],
-        rules: {
-            'json/*': ['error', 'allowComments'],
-            'prettier/prettier': ['warn', { parser: 'json' }],
-        },
+      extends: ['plugin:json/recommended'],
+      files: ['*.json'],
+      plugins: ['json'],
+      rules: {
+        'json/*': ['error', 'allowComments'],
+        'prettier/prettier': ['warn', { parser: 'json' }]
+      }
     },
     {
       extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'plugin:prettier/recommended'],
@@ -43,7 +36,7 @@ module.exports = {
       parserOptions: {
         ecmaVersion: 2021,
         project: './tsconfig.json',
-        sourceType: 'module',
+        sourceType: 'module'
       },
       rules: {
         'import/first': 'warn',
@@ -69,7 +62,7 @@ module.exports = {
         'spaced-comment': 'warn',
         'simple-import-sort/exports': 'warn',
         'simple-import-sort/imports': 'warn'
-      },
+      }
     },
     {
       files: ['*.d.ts'],

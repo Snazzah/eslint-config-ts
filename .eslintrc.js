@@ -1,3 +1,3 @@
 module.exports = {
-  extends: 'snazzah',
+  extends: './index.js'
 };
