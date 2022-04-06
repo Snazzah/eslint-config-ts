@@ -1,0 +1,26 @@
+{
+  "name": "eslint-config-snazzah",
+  "version": "1.0.0",
+  "repository": "https://github.com/Snazzah/eslint-config-snazzah",
+  "license": "MIT",
+  "author": {
+    "name": "Snazzah",
+    "email": "me@snazzah.com",
+    "url": "https://snazzah.com/"
+  },
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ext .ts .",
+    "lint:fix": "eslint --ext .ts . --fix"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.2.0",
+    "@typescript-eslint/parser": "^5.2.0",
+    "eslint": "^8.12.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.1"
+  }
+}

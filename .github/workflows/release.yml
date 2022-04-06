@@ -1,0 +1,26 @@
+name: Release
+on:
+  release:
+    types: [published]
+
+jobs:
+  publish-npm:
+    name: Publish on NPM
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Node.js for NPM
+        uses: actions/setup-node@v1
+        with:
+          registry-url: 'https://registry.npmjs.org'
+
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Publish
+        run: yarn publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
