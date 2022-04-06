@@ -1,2 +1,2 @@
-# esling-config-snazzah
-My eslint config for stuff.
+# eslint-config-snazzah
+My ESLint config for stuff. This is supposed to be a helpful config with support for some config files, but without any nagging about things like non-null assertion and explicit anys. Feel free to use, but some things may change without notice.
