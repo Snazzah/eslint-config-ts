@@ -78,6 +78,12 @@ module.exports = {
       parserOptions: {
         sourceType: 'module'
       }
+    },
+    {
+      files: ['vite.config.ts'],
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.json']
+      }
     }
   ]
 };
