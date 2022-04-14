@@ -44,6 +44,7 @@ module.exports = {
         '@typescript-eslint/no-non-null-assertion': 0,
         '@typescript-eslint/no-empty-function': 0,
         '@typescript-eslint/ban-ts-comment': 0,
+        '@typescript-eslint/no-var-requires': 0,
         'import/first': 'warn',
         'import/newline-after-import': 'warn',
         'import/no-duplicates': 'warn',
