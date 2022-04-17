@@ -11,7 +11,8 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "gpr": "node scripts/gpr"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.2.0",
