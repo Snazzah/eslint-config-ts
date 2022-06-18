@@ -1,9 +1,9 @@
 {
   "name": "eslint-config-snazzah",
   "version": "1.1.0",
-  "repository": "https://github.com/Snazzah/eslint-config-snazzah",
+  "repository": "https://github.com/Snazzah/eslint-config",
   "bugs": {
-    "url": "https://github.com/Snazzah/eslint-config-snazzah/issues"
+    "url": "https://github.com/Snazzah/eslint-config/issues"
   },
   "funding": {
     "url": "https://github.com/sponsors/Snazzah"
