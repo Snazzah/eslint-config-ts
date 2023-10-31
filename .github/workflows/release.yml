@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Set up Node.js for NPM
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 14.x
           registry-url: 'https://registry.npmjs.org'
@@ -32,10 +32,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Set up Node.js for GPR
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           registry-url: 'https://npm.pkg.github.com/'
           scope: '@snazzah'
